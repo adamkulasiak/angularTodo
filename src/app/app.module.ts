@@ -7,7 +7,8 @@ import { AppComponent } from './app.component';
 import { TodoListComponent } from './todo-list/todo-list.component';
 import { AppbarComponent } from './appbar/appbar.component';
 import { LoginComponent } from './login/login.component';
-import { AppRoutingModule } from './app-routing/app-routing.module'
+import { AppRoutingModule } from './app-routing/app-routing.module';
+import { RegisterComponent } from './register/register.component'
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { AppRoutingModule } from './app-routing/app-routing.module'
     TodoListComponent,
     AppbarComponent,
     LoginComponent,
+    RegisterComponent,
 
   ],
   imports: [
