@@ -1,0 +1,21 @@
+<div class="content">
+  <div class="header">
+    <h1>{{title}}</h1>
+  </div>
+  <div class="todo-add">
+    <label>
+      Nowe zadanie:
+    </label>
+    <input type="text" [(ngModel)]="todoList" (keyup.enter)="addTodo()" />
+    <button type="button" class="btn btn-primary" (click)="addTodo()">Dodaj</button>
+  </div>
+  <div class="todo-item">
+    <ul class="list-group list-group-flush">
+      <li *ngFor="let todo of todos; let ind = index" class="list-group-item">
+        <span class="checkbox"><input type="checkbox" [(ngModel)]="todo.completed" /></span>
+        <span [ngClass]="{'checked':todo.completed}" class="item">{{todo.title}}</span>
+        <span (click)="deleteTodo(ind)" class="delete">[X]</span>
+      </li>
+    </ul>
+  </div>
+</div>

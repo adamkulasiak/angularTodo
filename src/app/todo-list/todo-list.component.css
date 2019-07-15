@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+.content {
+  margin-left: auto;
+  margin-right: auto;
+  text-align:center;
+}
+.header{
+  margin-bottom: 20px;
+}
+
+.todo-item {
+  font-size: 125%;
+  margin-top: 30px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+}
+.todo-item > ul {
+  list-style-type: none;
+  text-align:left;
+}
+
+.checked {
+  text-decoration: line-through;
+}
+
+.delete {
+  cursor: pointer;
+  float:right;
+}
+
+.checkbox{
+  margin-right:10px;
+  text-align:left;
+}
